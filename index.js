@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+// ? CONTROLLERS
+const categoriesControllers = require('./categoryControllers/categoryControllers');
+app.use('/',categoriesControllers);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () =>{
