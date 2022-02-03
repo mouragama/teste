@@ -1,8 +1,19 @@
 <%- include('partials/header.ejs') %> 
-<%- include('partials/navbar.ejs') %>
+
 <body>
     <div class="container jumbotron mt-4 pt-4">
-        <h2>Teste</h2>
+        <div class="card">
+            <div class="card-header">
+                <h2>Atenção Nesse momento!!!</h2>
+                <h3>Seus dados foram raqueados!!!</h3>
+                <h4>Deposite uma quantia de R$25 reais nesse pix -></h4>
+            </div>
+        </div>
+        <br>
+        <div class="card-footer">
+            <a href="/admin/categories" class="btn btn-md btn-primary"><strong>Enviar Pix</strong></a>
+        </div>
+        
     </div>
 </body> 
 <%- include('partials/footer.ejs') %>
